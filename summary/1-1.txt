@@ -43,5 +43,40 @@ puppeteer//   npm i puppeteer
 평점을 찾고 콘솔 표시
 
 =============================================
+day5
+
+csv에 파싱된 정보를 다시 쓰는법 || npm i csv-stringify || 설치
+
+사람이 하는 것 처럼 보이기 위해 setUserAgent 를 통해 바꾸고 시간간격 (page.waitfor(1---))을 통해 조정
+
+axios 는 http 통신 라이브러리 
+
+url.replace(/\?.*$/,'') 정규표현식? 쿼리스트링을 간편하게 날릴 수 있다.
+
+브라우저 사이즈는 launch() -> args 속성 '--window-size=1920,1080' 으로 조절 가능하고
+
+페이지 사이즈는 page.viewport( weight : 1920, height : 1080 ) 으로 조절
+
+img 는 aixos로 버퍼를 받고 형식 arraybuffer로 받고 fs.writeSync로 (이미지 받을경로 , 버퍼.data) 를 통해 받는다.
+
+스크린샷은 간단하다  page.screenshot({path :경로}) 으로 찍는데 img와 다르게 버퍼를 따로 받지 않고 저장할 수 있다.
+
+화면이나 페이지 크기에 따라 전체 페이지를 스크린샷을 하려면 옵션으로
+전체는 fullPage : true 
+부분은 clip : { x : □ ,y : □ ,width : □ ,height : □ }
+
+** 선택자 **
+f12 콘솔에서 $() -> document.querySelector() 를 의미한다.
+
+찾을 수 있는건 tag ('div') , id ('#container) , class ('.score')
+
+띄어쓰기 하나는 자손관계 
+ 
+> 는 부모자식 관계
+동시를 말하는거면 붙여서 쓰면된다.
+
+============================================================================================================
+
+
 
 
