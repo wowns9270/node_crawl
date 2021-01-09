@@ -81,4 +81,8 @@ day 6
 
 infinity crwal unsplash ex1
 
+day 7
+
+unsplash에서 사진 30장 스크롤
+
 
